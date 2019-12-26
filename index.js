@@ -78,3 +78,21 @@ let class1 = new className('English', 224, 'Wazowski');
 class1.tellRoomNum();
 class1.changeRoomNum(240);
 class1.tellRoomNum();
+
+// ------------------------------------
+
+function Player(name, favGame) {
+    this.name = name,
+    this.favGame = favGame,
+    this.play = function() {
+        console.log(`${this.name} is playing ${this.favGame}`);
+    }
+    this.newFavGame = function(newGame) {
+        this.favGame = newGame;
+        console.log(`${this.name}'s new favorite game is ${this.favGame}`);
+    }
+}
+
+let player1 = new Player('John', 'Call of Duty');
+player1.play();
+player1.newFavGame('Mario Cart');
