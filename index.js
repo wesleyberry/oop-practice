@@ -56,3 +56,25 @@ class Member extends User {
 let mike = new Member('Mike', 'mike@mike.com', 'password', 'Standard');
 // mike.getPackage();
 mike.register();
+
+class className {
+    constructor(type, roomNum, professor) {
+        this.type = type;
+        this.roomNum = roomNum;
+        this.professor = professor;
+    }
+
+    tellRoomNum() {
+        console.log(`This is room #${this.roomNum}`);
+    }
+
+    changeRoomNum(newNum) {
+        this.roomNum = newNum;
+        console.log(`The new room number is #${this.roomNum}`);
+    }
+}
+
+let class1 = new className('English', 224, 'Wazowski');
+class1.tellRoomNum();
+class1.changeRoomNum(240);
+class1.tellRoomNum();
