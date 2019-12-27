@@ -113,3 +113,17 @@ class classDetails {
 
 let class1 = new classDetails('English', 400, 'Zelinski');
 class1.getClassName();
+
+
+function Student(name, age, study) {
+    this.name = name,
+    this.age = age;
+    this.study = study;
+
+    this.studyBooks = function() {
+        console.log(`${this.name} is studying ${study}`);
+    }
+}
+
+let bob = new Student('Bob', 20, 'Computer Science');
+bob.studyBooks();
